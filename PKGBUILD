@@ -14,10 +14,10 @@ makedepends=('bc' 'git' 'python' 'swig' 'dtc')
 install=${pkgname}.install
 source=("ftp://ftp.denx.de/pub/u-boot/u-boot-${pkgver}.tar.bz2"
         "https://github.com/ARM-software/arm-trusted-firmware/archive/v2.5.tar.gz"
-		"extlinux.conf")
+        "extlinux.conf")
 md5sums=('f1392080facf59dd2c34096a5fd95d4c'
          'a3c01d2a73d5171e3f1c0737ff5321d9'
-		 'faf2b85206cb66c31f7c97da7b2b281d')
+         'faf2b85206cb66c31f7c97da7b2b281d')
 
 prepare() {
 	cd ${srcdir}/arm-trusted-firmware-2.5
