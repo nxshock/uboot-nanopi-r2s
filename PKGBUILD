@@ -23,10 +23,7 @@ prepare() {
 	cd ${srcdir}/arm-trusted-firmware-2.5
 	make PLAT=rk3328
 
-	cd ${srcdir}/u-boot-${pkgver}
-
-	cd ${srcdir}/u-boot-${pkgver}/configs
-	echo 'CONFIG_IDENT_STRING=" Arch Linux ARM"' >> nanopi-r2s-rk3328_defconfig
+	echo 'CONFIG_IDENT_STRING=" Arch Linux ARM"' >> ${srcdir}/u-boot-${pkgver}/configs/nanopi-r2s-rk3328_defconfig
 }
 
 build() {
